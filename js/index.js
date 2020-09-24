@@ -27,8 +27,9 @@ $.when($.ajax({
         // 昨日新增确诊国家Top10
         top10();
     })
+// 标题
 function title() {
-
+    $(".brief .brief_header p").text("更新时间 - " + foreignData.globalStatis.lastUpdateTime)
 }
 function brief() {
     var htmlStr = `
