@@ -1,0 +1,25 @@
+{
+  "name": "echarts",
+  "version": "1.0.0",
+  "description": "基于 ECharts 的全球疫情数据可视化 在线预览地址：https://lijiahhui.github.io/EChartsCov/",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "superagent": "^6.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiJiaHHui/EChartsCov.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiJiaHHui/EChartsCov/issues"
+  },
+  "homepage": "https://github.com/LiJiaHHui/EChartsCov#readme"
+}

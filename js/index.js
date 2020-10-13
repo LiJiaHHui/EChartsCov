@@ -1,14 +1,14 @@
 //国外数据，请求qq的api,ajax
+// import spider from '../server/spider'
 var foreignData = null;
 var chinaData = null;
-$.when($.ajax({
-    url: "https://view.inews.qq.com/g2/getOnsInfo?name=disease_foreign",
-    dataType: "jsonp",
-    success: function (data) {
-        foreignData = JSON.parse(data.data)
-        console.log(JSON.parse(data.data))
-    }
-}),
+// foreignData=spider() 
+
+$.when(
+   fetch('http://127.0.0.1:8066/api/data').then(res=>res.json()).then(res=>{
+       foreignData=res
+   }),
+console.log(foreignData),
     $.ajax({
         url: "https://view.inews.qq.com/g2/getOnsInfo?name=disease_h5",
         dataType: "jsonp",
